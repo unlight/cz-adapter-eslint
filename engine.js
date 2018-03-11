@@ -1,7 +1,7 @@
-import longest from 'longest'
-import map from 'lodash.map'
-import rightPad from 'right-pad'
-import wrap from 'word-wrap'
+var longest = require('longest')
+var map = require('lodash.map')
+var rightPad = require('right-pad')
+var wrap = require('word-wrap')
 
 function filter (array) {
     return array.filter(function (x) {
@@ -9,7 +9,7 @@ function filter (array) {
     })
 }
 
-export default function (options) {
+module.exports = function (options) {
     var types = options.types
 
     var length = longest(Object.keys(types)).length + 1

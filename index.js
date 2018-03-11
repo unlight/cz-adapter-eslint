@@ -1,6 +1,6 @@
-import engine from './engine'
+var engine = require('./engine');
 
-export default engine({
+module.exports = engine({
     types: {
         'Fix': {
             description: 'A bug fix',
